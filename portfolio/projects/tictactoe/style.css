@@ -4,10 +4,10 @@
 }
 
 body{
-    background-color: #EAC435;
+    background-color: #E4DDD3;
 }
 h1{
-    color:#CA1551;
+    color:black;
     font-size: 5rem;
     font-family:'inter', sans-serif;
 }
@@ -27,8 +27,8 @@ main{
 }
 
 .box{
-    background-color: #03CEA4;
-    color: #345995;
+    background-color: #00A19B;
+    color: #E4DDD3;
     display: flex;
     justify-content: center;
     align-content: center;
@@ -55,16 +55,16 @@ main{
     font-weight: bold;
     border-radius: 10px;
     background-color: transparent;
-    color: #CA1551;
+    color: black;
     border: 4px solid black;
 }
 
 #result{
-    color: #03CEA4;
+    color: #00A19B;
     font-size: 3rem;
     font-weight: bold;
     text-align: center;
-    text-shadow: 2px 2px 4px #345995;
+    text-shadow: 2px 2px 4px #E4DDD3;
 }
 
 #resultbox{
