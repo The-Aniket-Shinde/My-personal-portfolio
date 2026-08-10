@@ -21,6 +21,7 @@ function checkWinner(){
         else{
             if(box[combo[0]].innerText === box[combo[1]].innerText && box[combo[1]].innerText === box[combo[2]].innerText){
                 document.getElementById("result").textContent = `${box[combo[0]].innerText} won the game`;
+                document.getElementById("reset").style.display = "inline-block";
                 return;
             }
         }
@@ -31,7 +32,8 @@ function resetGame(){
     box.forEach((b) => {
         b.textContent = "";
         b.classList.remove("clicked");
-    })};
+    })
+};
 
 box.forEach((b) => {
     b.addEventListener("click", (e) => {
@@ -57,5 +59,6 @@ document.getElementById("reset").addEventListener("click", () => {
     mainbox.classList.remove("player2");
     mainbox.classList.add("player1");
     document.getElementById("result").textContent = "";
+    document.getElementById("reset").style.display = "none";
 });
     
