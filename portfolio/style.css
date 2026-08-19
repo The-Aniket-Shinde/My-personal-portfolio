@@ -289,6 +289,29 @@ nav .active {
     color: #a5d6ff;
 }
 
+.code-body .number{
+    color:#858585;
+}
+
+.code-body .blue {
+    color:#79c0ff
+}
+
+.cursor{
+    animation: blink 0.8s infinite;
+}
+
+@keyframes blink {
+    0%, 50% {
+        opacity: 1;
+    }
+
+    51%, 100% {
+        opacity: 0;
+    }
+}
+
+
 .terminal {
     border-top: 1px solid rgba(99, 216, 60, .15);
     padding: 1rem 1.5rem 1.5rem 1.5rem;
@@ -302,11 +325,15 @@ nav .active {
 
 .terminal p {
     margin-top: 0.75rem;
-    color: #63D83C;
-    font-size: 0.85rem;
+    color: #F5F5F5;
+    font-size: 0.85remC;
 }
 
-/* ===== ABOUT SECTION ===== */
+.terminal p span {
+    color:#63D83C;
+}
+
+/* ABOUT SECTION */
 main {
     max-width: 60rem;
     margin: 0 auto;
@@ -319,7 +346,7 @@ main p {
     font-size: 1rem;
 }
 
-/* ===== FOOTER ===== */
+/* FOOTER */
 footer {
     text-align: center;
     padding: 2rem;
@@ -329,7 +356,7 @@ footer {
     margin-top: 2rem;
 }
 
-/* ===== RESPONSIVE ===== */
+/* RESPONSIVE */
 @media (max-width: 992px) {
     .hero {
         grid-template-columns: 1fr;
